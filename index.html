@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pro Edu</title>
+    <title>E-Leanning</title>
 
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
 
     <!-- css stylesheet link -->
     <link rel="stylesheet" href="css/style.css">
@@ -35,12 +37,14 @@
         <div class="container flex flex-wrap justify-between items-center
                 mx-auto">
             <a href="#" class="flex items-center">
-                <span class="self-center text-xl font-semibold
+                <img class="w-16" src="./images/logo.png" alt="logo.png">
+                <span class="self-center text-xl font-semibold ml-1
                         whitespace-nowrap">
+                      
                     <span class="text-5xl text-blue-500 -mr-1">E</span>
                 <span class="inline-block w-1 h-1 rounded-full
-                            bg-gray-700"></span>
-                <span class="-ml-1 text-blue-400 uppercase text-sm">Learning</span>
+                            bg-blue-500"></span>
+                <span class="ml-0 text-blue-500 uppercase text-md">Learning</span>
                 </span>
             </a>
             <button data-collapse-toggle="navbar-multi-level" type="button" class="inline-flex justify-center items-center ml-3
@@ -209,11 +213,10 @@
                         group focus:outline-none" data-carousel-prev="">
                     <span class="inline-flex justify-center items-center
                             w-10
-                            h-10 rounded-full bg-white/30 dark:bg-gray-800/30
+                            h-10 rounded-full bg-white/30
                             group-hover:bg-white/50
-                            dark:group-hover:bg-gray-800/60 group-focus:ring-4
+                            group-focus:ring-4
                             group-focus:ring-white
-                            dark:group-focus:ring-gray-800/70
                             group-focus:outline-none">
                         <svg aria-hidden="true" class="w-6 h-6 text-white" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -228,11 +231,10 @@
                         cursor-pointer group focus:outline-none" data-carousel-next="">
                     <span class="inline-flex justify-center items-center
                             w-10
-                            h-10 rounded-full bg-white/30 dark:bg-gray-800/30
+                            h-10 rounded-full bg-white/30
                             group-hover:bg-white/50
-                            dark:group-hover:bg-gray-800/60 group-focus:ring-4
+                            group-focus:ring-4
                             group-focus:ring-white
-                            dark:group-focus:ring-gray-800/70
                             group-focus:outline-none">
                         <svg aria-hidden="true" class="w-6 h-6 text-white" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -254,12 +256,15 @@
     <main class="container mx-auto px-2">
 
         <!-- our popular courses section start -->
-        <section class="mt-8 sm:mt-20">
+        <section class="mt-8 md:mt-14 lg:mt-24">
             <h1 class="text-gray-800 text-center text-lg sm:text-3xl
                     lg:text-4xl font-bold">
                 Discover Our Popular Courses</h1>
             <p class="text-gray-500 text-center mt-3 text-sm md:text-base">
-                It is a long established fact that a reader will be distracted by the readableIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                It is a long established fact that a reader will be distracted by the readableIt is a long established fact that a reader will be 
+                <br>
+                distracted by the readable content of a page when 
+                looking at its layout.
             </p>
 
 
@@ -353,9 +358,7 @@
             </div>
 
 
-            <button class="bg-primary text-sm block mx-auto bg-blue-400
-                    text-white hover:bg-blue-500 px-4 py-2 mt-4 rounded
-                    hover:text-white">
+            <button class="bg-primary text-sm block mx-auto bg-blue-400 text-white hover:bg-blue-500 px-4 py-2 mt-4 lg:mt-10 rounded hover:text-white">
                 View More Courses
             </button>
 
@@ -365,7 +368,7 @@
 
 
         <!-- explore our Institute section start -->
-        <section class="mt-8 sm:mt-20">
+        <section class="mt-8 md:mt-14 lg:mt-24">
             <div class="grid grid-cols-1 sm:grid-cols-12 rounded items-center bg-sky-100/40">
 
                 <div class="col-span-6 md:col-span-5">
@@ -415,8 +418,92 @@
         <!-- explore our Institute section end -->
 
 
+
+        <!-- registraion popup modal section start -->
+        <div id="authentication-modal" 
+            tabindex="-1" 
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center" 
+            aria-modal="true" role="dialog">
+            <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+                <!-- Modal content -->
+                <div class="relative bg-white rounded-lg shadow ">
+                    <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" 
+                    data-modal-toggle="authentication-modal">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" 
+                            clip-rule="evenodd"></path></svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                    <div class="py-6 px-6 lg:px-8">
+                        <h3 class="mb-4 text-xl font-medium text-gray-900 text-center ">Create a new account</h3>
+                        <form class="space-y-6" action="#">
+                            <div>
+                                <label for="name" class="block mb-2 text-sm font-medium text-gray-900">Your Name</label>
+                                <input 
+                                    type="name" 
+                                    name="text" 
+                                    id="name" 
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" 
+                                    placeholder="your name" 
+                                    required=""
+                                >
+                            </div>
+                            <div>
+                                <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your email</label>
+                                <input 
+                                    type="email" 
+                                    name="email" 
+                                    id="email" 
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" 
+                                    placeholder="your@company.com" 
+                                    required=""
+                                >
+                            </div>
+                            <div>
+                                <label for="password" class="block mb-2 text-sm font-medium text-gray-900">Your password</label>
+                                <input 
+                                type="password" 
+                                name="password" 
+                                id="password" 
+                                placeholder="••••••••" 
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" 
+                                required=""
+                            >
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex items-start">
+                                    <div class="flex items-center h-5">
+                                        <input 
+                                            id="remember" 
+                                            type="checkbox" 
+                                            value="" 
+                                            class="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300" 
+                                            required=""
+                                        >
+                                    </div>
+                                    <label for="remember" class="ml-2 text-sm font-medium text-gray-900 ">Remember me</label>
+                                </div>
+                            </div>
+                            <button 
+                                type="submit" 
+                                class="w-full text-white bg-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 
+                                font-medium rounded-md text-sm px-5 py-2.5 text-center">
+                                Create account
+                            </button>
+
+                            <div class="text-sm font-medium text-gray-500">
+                                Already have an Account ? <a href="#" class="text-blue-500 hover:underline">Login here</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- registraion popup modal section end -->
+
+
+
         <!-- ready to join end -->
-        <section class="mt-8 sm:mt-20 bg-blue-400 py-8 lg:py-16 px-20 rounded">
+        <section class="mt-8 md:mt-14 lg:mt-24 bg-blue-400 py-8 lg:py-16 px-20 rounded">
             <div class="mx-auto flex flex-col lg:flex-row justify-between
                     items-center">
                 <div class="max-w-max md:max-w-lg w-full">
@@ -427,7 +514,7 @@
                             leading-8">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                 </div>
                 <button class="bg-primary text-sm block bg-white
-                        text-blue-500 px-4 py-2 mt-4 rounded">
+                        text-blue-500 px-4 py-2 mt-4 rounded" type="button" data-modal-toggle="authentication-modal">
                     Registration
                 </button>
             </div>
@@ -436,8 +523,8 @@
 
 
 
-        <!-- successfull students section start -->
-        <section class="mt-8 sm:mt-20">
+        <!-- meet successfull students section start -->
+        <section class="mt-8 md:mt-14 lg:mt-24">
             <h1 class="text-gray-800 text-xl md:text-3xl lg:text-4xl font-bold">
                 Meet Our Successfull Students
             </h1>
@@ -445,7 +532,7 @@
                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
             </p>
 
-            <div class="mt-4 md:mt-8 lg:mt-12">
+            <div class="mt-4 md:mt-6 lg:mt-9">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     <div class="border border-gray-200 rounded-lg">
                         <img class="w-full" src="./images/student/student-1.png" alt="student-1">
@@ -482,12 +569,12 @@
             </div>
 
         </section>
-        <!-- successfull students section end -->
+        <!-- meet successfull students section end -->
 
 
 
         <!-- students feedback section start -->
-        <section class="mt-8 sm:mt-20">
+        <section class="mt-8 md:mt-14 lg:mt-24">
             <h1 class="text-gray-800 text-xl md:text-3xl lg:text-4xl text-center font-bold">
                 Some Students Feedback
             </h1>
@@ -495,7 +582,7 @@
                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
             </p>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-5 lg:gap-6 mt-4 md:mt-9">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-5 lg:gap-6 mt-4 md:mt-6 lg:mt-9">
                 <div class="rounded border border-gray-200 p-6">
                     <div class="flex justify-between">
                         <img class="w-14" src="./images/comma.png" alt="comma">
@@ -554,7 +641,7 @@
 
 
         <!-- Fequently aks question section start -->
-        <section class="mt-8 md:mt-20  max-w-2xl mx-auto">
+        <section class="mt-8 md:mt-14 lg:mt-24  max-w-2xl mx-auto">
           
                 <div class="mb-7 md:mb-10 ">
                     <h1 class="text-gray-800 text-xl md:text-3xl lg:text-4xl font-bold text-center">
@@ -565,7 +652,7 @@
                     </p>
                 </div>
                 
-                <div id="accordion-collapse" data-accordion="collapse" class="mt-4 md:mt-8 lg:mt-12">
+                <div id="accordion-collapse" data-accordion="collapse" class="mt-4 md:mt-6 lg:mt-9">
 
                     <h2 id="accordion-collapse-heading-1">
                     <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-gray-200 rounded-t-xl  hover:bg-gray-100 da bg-gray-100  text-gray-900" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
@@ -593,7 +680,7 @@
                     <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
                     <div class="p-5 font-light border border-b-0 border-gray-200 ">
                         <p class="mb-2 text-gray-500 ">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
-                        <p class="text-gray-500 ">Check out the <a href="https://flowbite.com/figma/" class="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classes from Tailwind CSS and components from Flowbite.</p>
+                        <p class="text-gray-500 ">Check out the <a href="https://flowbite.com/figma/" class="text-blue-600 hover:underline">Figma design system</a> based on the utility classes from Tailwind CSS and components from Flowbite.</p>
                     </div>
                    
 
@@ -611,8 +698,8 @@
                         <p class="mb-2 text-gray-500 ">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
                         <p class="mb-2 text-gray-500 ">Learn more about these technologies:</p>
                         <ul class="pl-5 text-gray-500 list-disc ">
-                        <li><a href="https://flowbite.com/pro/" class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
-                        <li><a href="https://tailwindui.com/" rel="nofollow" class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                        <li><a href="https://flowbite.com/pro/" class="text-blue-600 hover:underline">Flowbite Pro</a></li>
+                        <li><a href="https://tailwindui.com/" rel="nofollow" class="text-blue-600 hover:underline">Tailwind UI</a></li>
                         </ul>
                     </div>
                     </div>
@@ -633,10 +720,10 @@
 
 
         <!-- Trusted companies start -->
-        <section class="mt-8 sm:mt-20 hidden lg:block">
+        <section class="mt-8 md:mt-14 lg:mt-24 hidden lg:block">
             <h1 class="text-gray-800 text-xl md:text-3xl lg:text-4xl font-bold text-center">Trusted by over 800+ companies</h1>
 
-            <div class="flex flex-wrap justify-center items-center gap-x-14  mt-4 md:mt-8 ">
+            <div class="flex flex-wrap justify-center items-center gap-x-14 mt-4 md:mt-6 lg:mt-9">
                 <li class="w-24 list-none">
                     <img class="w-full" src="./images/company/company-1.png" alt="coursera_logo">
                 </li>
@@ -661,20 +748,39 @@
 
         <!-- Trusted companies end -->
 
-        <section class="mt-8 sm:mt-20">
-            </section>
-
-        <section class="mt-8 sm:mt-20">
-            </section>
-
-        <section class="mt-8 sm:mt-20">
-            </section>
-
-
-
 
     </main>
 
+
+    <!-- footer section start -->
+    <footer class="bg-gray-900 mt-8 md:mt-14 lg:mt-24 p-7 md:p-14 lg:p-24">
+
+        <div class="container mx-auto">
+            <div class="max-w-sm mx-auto">
+                <h1 class="text-white text-center text-2xl font-medium mb-4">E-Learning</h1>
+                <p class="text-gray-100 text-center text-base my-3">
+                    Office 41, Zawaya Buildin, Ghala Muscat, Sultanate of Oman
+                </p>
+                <p class="text-gray-100 text-center text-base my-3">Privacy Ploicy  |   Terms of use</p>
+                <div class="flex mt-6 justify-center">
+                    <a class="mr-2 group  group-hover:text-blue-500 bg-gray-800 w-8 h-8 rounded-full flex items-center justify-center" href="https://www.facebook.com/rasel.mahmud.dev">
+                        <i class="text-gray-50 group-hover:text-blue-500 fa-brands fa-facebook"></i></a>
+                    <a class="mx-2 group  group-hover:text-blue-500 bg-gray-800 w-8 h-8 rounded-full flex items-center justify-center" href="https://www.instagram.com/raselmraju">
+                        <i class="text-gray-50 group-hover:text-blue-500 fa-brands fa-instagram"></i></a>
+                    <a class="mx-2 group  group-hover:text-blue-500 bg-gray-800 w-8 h-8 rounded-full flex items-center justify-center" href="https://twitter.com/?lang=en">
+                        <i class="text-gray-50 group-hover:text-blue-500 fa-brands fa-twitter"></i></a>
+                    <a class="mx-2 group  group-hover:text-blue-500 bg-gray-800 w-8 h-8 rounded-full flex items-center justify-center" href="https://www.linkedin.com/in/rasel-mahmud-9869a2234">
+                        <i class="text-gray-50 group-hover:text-blue-500 fa-brands fa-linkedin"></i></a>
+                    <a class="mx-2 group  group-hover:text-blue-500 bg-gray-800 w-8 h-8 rounded-full flex items-center justify-center" href="https://tiktok.com">
+                        <i class="text-gray-50 group-hover:text-blue-500 fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- footer section end -->
 
 
 
