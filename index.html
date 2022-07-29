@@ -21,9 +21,11 @@
 
     <!-- flowbite css cdn link -->
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+
     <!-- fontawesome script link -->
     <script src="https://kit.fontawesome.com/d3cefd4379.js" crossorigin="anonymous"></script>
 
+    <!-- Tailwind CSS cdn link -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -34,12 +36,11 @@
 
     <!-- navigation section start -->
 
-    <nav class="px-2 bg-white border-gray-200 py-4 fixed top-0 w-full z-50">
+    <nav class="px-2 bg-white border-gray-200 py-1.5 sm:py-2 md:py-4 fixed top-0 w-full z-30 shadow-md">
         <div class="container flex flex-wrap justify-between items-center
                 mx-auto">
             <a href="#" class="flex items-center">
-                <img class="w-16" src="./images/logo.png" alt="logo.png">
-                <svg class="ml-1" width="152" height="35" viewBox="0 0 152 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="ml-1 w-24 md:w-28 lg:w-32" viewBox="0 0 152 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19.9647 29.8906C19.9689 30.2682 19.9488 30.6456 19.9047 31.0206C19.8793 31.2744 19.8187 31.5235 19.7247 31.7606C19.6699 31.9225 19.5692 32.065 19.4347 32.1706C19.3229 32.2563 19.1856 32.3021 19.0447 32.3006H3.84472C3.59003 32.3191 3.3344 32.2807 3.09641 32.1881C2.85843 32.0955 2.64405 31.9511 2.46882 31.7654C2.2936 31.5796 2.16193 31.3572 2.08338 31.1142C2.00484 30.8712 1.98138 30.6138 2.01472 30.3606V3.95061C1.99021 3.67871 2.02488 3.40473 2.11637 3.14752C2.20787 2.8903 2.354 2.65596 2.54472 2.46061C2.90662 2.15242 3.36953 1.98863 3.84472 2.00061H18.9647C19.0978 1.99917 19.2278 2.04131 19.3347 2.12062C19.4659 2.22719 19.5632 2.36965 19.6147 2.53061C19.705 2.77235 19.7655 3.02422 19.7947 3.28061C19.839 3.66564 19.8591 4.05307 19.8547 4.44062C19.8586 4.81152 19.8386 5.1823 19.7947 5.55062C19.7693 5.80444 19.7087 6.05348 19.6147 6.29061C19.5632 6.45157 19.4659 6.59404 19.3347 6.70061C19.2311 6.78713 19.0997 6.8333 18.9647 6.83062H8.15472V14.2406H17.3147C17.4558 14.2375 17.5937 14.2835 17.7047 14.3706C17.8398 14.4714 17.9409 14.6109 17.9947 14.7706C18.0877 15.0011 18.1483 15.2435 18.1747 15.4906C18.2183 15.8623 18.2383 16.2364 18.2347 16.6106C18.2389 16.9849 18.2189 17.359 18.1747 17.7306C18.1483 17.9778 18.0877 18.2201 17.9947 18.4506C17.9379 18.6033 17.837 18.7356 17.7047 18.8306C17.5904 18.9102 17.454 18.9521 17.3147 18.9506H8.15472V27.5006H19.0747C19.2148 27.5039 19.3507 27.5492 19.4647 27.6306C19.5947 27.7404 19.6945 27.8815 19.7547 28.0406C19.8459 28.2786 19.9064 28.5273 19.9347 28.7806C19.9676 29.1496 19.9776 29.5203 19.9647 29.8906V29.8906Z" fill="#3B82F6" stroke="#3B82F6" stroke-width="4" stroke-miterlimit="10"/>
                     <path d="M33.5047 30.1806C33.5303 30.5193 33.486 30.8597 33.3747 31.1806C33.3403 31.2629 33.2817 31.3327 33.2067 31.381C33.1317 31.4292 33.0438 31.4535 32.9547 31.4506H27.9547C27.8627 31.4548 27.7718 31.43 27.6946 31.3798C27.6175 31.3296 27.558 31.2564 27.5247 31.1706C27.418 30.8486 27.3738 30.5092 27.3947 30.1706C27.3776 29.8519 27.4217 29.5328 27.5247 29.2306C27.558 29.1448 27.6175 29.0717 27.6946 29.0214C27.7718 28.9712 27.8627 28.9464 27.9547 28.9506H32.9547C33.0419 28.948 33.1282 28.9687 33.2047 29.0106C33.2782 29.0651 33.3367 29.1373 33.3747 29.2206C33.4308 29.3402 33.4646 29.4689 33.4747 29.6006C33.4967 29.7932 33.5067 29.9868 33.5047 30.1806V30.1806Z" fill="#3B82F6" stroke="#3B82F6" stroke-width="4" stroke-miterlimit="10"/>
                     <path d="M49.6746 31.6406C49.6923 31.8569 49.6923 32.0743 49.6746 32.2906C49.6604 32.4401 49.6302 32.5876 49.5846 32.7306C49.5492 32.8241 49.4948 32.9093 49.4246 32.9806C49.3588 33.0318 49.278 33.0599 49.1946 33.0606H41.5546C41.4234 33.0667 41.2923 33.0468 41.1688 33.0022C41.0452 32.9576 40.9317 32.8891 40.8346 32.8006C40.7291 32.6957 40.6482 32.5685 40.5981 32.4284C40.5479 32.2883 40.5296 32.1387 40.5446 31.9906V16.8906C40.5453 16.8072 40.5735 16.7264 40.6246 16.6606C40.6997 16.5782 40.7969 16.5192 40.9046 16.4906C41.074 16.4391 41.2483 16.4056 41.4246 16.3906C41.9733 16.3373 42.5259 16.3373 43.0746 16.3906C43.2476 16.4065 43.4185 16.44 43.5846 16.4906C43.6924 16.5192 43.7896 16.5782 43.8646 16.6606C43.9206 16.7237 43.9493 16.8064 43.9446 16.8906V30.3106H49.1946C49.2769 30.3077 49.3579 30.3323 49.4246 30.3806C49.4948 30.4441 49.5495 30.5227 49.5846 30.6106C49.6313 30.7499 49.6615 30.8942 49.6746 31.0406C49.6897 31.2403 49.6897 31.4409 49.6746 31.6406Z" fill="#3B82F6" stroke="#3B82F6" stroke-width="2" stroke-miterlimit="10"/>
@@ -55,7 +56,7 @@
             <button 
                 data-collapse-toggle="navbar-multi-level" 
                 type="button" 
-                class="inline-flex justify-center items-center ml-3 px-4 py-3
+                class="inline-flex justify-center items-center ml-3 px-4 py-2
                 text-gray-400 rounded-lg md:hidden hover:text-gray-900
                 focus:outline-none focus:ring-2 focus:ring-blue-300" 
                 aria-controls="navbar-multi-level" 
@@ -125,8 +126,9 @@
 
         </div>
     </nav>
+
     <!-- fixed nav bottom spacer -->
-    <div class="h-20"></div>
+    <div class="h-1 sm:h-4 md:h-10 lg:h-20"></div>
     <!-- navigation section end -->
 
 
@@ -136,11 +138,9 @@
 
             <div id="controls-carousel" class="relative" data-carousel="static">
                 <!-- Carousel wrapper -->
-                <div class="overflow-hidden relative h-60 rounded-lg md:h-96 lg:h-110 xl:h-128">
+                <div class="overflow-hidden relative rounded-lg h-56 sm:h-72 md:h-96 lg:h-110 xl:h-120 2xl:h-128">
                     <!-- Item 1 -->
                     <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="active">
-
-
                         <div class="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                             <h1 class="text-white text-center text-md md:text-2xl lg:text-5xl mb-2 sm:mb-3   md:mb-10 font-medium">
                                 Get Started Digital Learning
@@ -148,16 +148,19 @@
                             <p class="text-gray-300 text-center mt-2 text-xs md:text-base">
                                 Transform your workforce with intensive training, assessments, and an exclusive hiring pipeline.
                             </p>
-                            <button class="bg-primary text-sm block mx-auto
+                            <button class="bg-primary block text-sm mx-auto
                                     bg-blue-400 text-white hover:bg-blue-500
                                     px-4 py-2 mt-4 rounded hover:text-white">Start
                                 Your Learning
                             </button>
 
                         </div>
-                        <img src="./images/cover/cover-1.jpg" class="block
-                                absolute top-1/2 left-1/2 w-full
-                                -translate-x-1/2 -translate-y-1/2 brightness-50" alt="online-teaching">
+                        <img 
+                            src="./images/cover/cover-1.jpg" 
+                            class="block absolute top-1/2 left-1/2 w-full
+                                -translate-x-1/2 -translate-y-1/2 brightness-50" 
+                            alt="online-teaching"
+                        >
 
                     </div>
 
@@ -172,12 +175,17 @@
                             <button class="bg-primary text-sm block mx-auto
                                     bg-blue-400 text-white hover:bg-blue-500
                                     px-4 py-2 mt-4 rounded hover:text-white">Start
-                                Your Learning</button>
+                                Your Learning
+                            </button>
 
                         </div>
-                        <img src="./images/cover/cover-2.jpg" class="block
+                        <img 
+                            src="./images/cover/cover-2.jpg" 
+                            class="block
                                 absolute top-1/2 left-1/2 w-full
-                                -translate-x-1/2 -translate-y-1/2 brightness-50" alt="online-teaching-student">
+                                -translate-x-1/2 -translate-y-1/2 brightness-50" 
+                            alt="online-teaching-student"
+                        >
                     </div>
 
                     <!-- Item 3 -->
@@ -199,7 +207,11 @@
                             </button>
 
                         </div>
-                        <img src="./images/cover/cover-3.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 brightness-50" alt="successfull-student">
+                        <img 
+                            src="./images/cover/cover-3.jpg" 
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 brightness-50" 
+                            alt="successfull-student"
+                        >
 
                     </div>
 
@@ -279,14 +291,12 @@
                     <img class="w-full sm:w-auto" src="./images/course/course-2.png" alt="course1_thumb">
                     <div class="ml-0 sm:ml-4 md:p-4 mt-4 sm:mt-0 p-4
                             sm:p-0">
-                        <h1 class="text-xl font-medium">Javascript Basic to advanced
-                        </h1>
-                        <p class="text-base text-gray-500 mt-2">
+                        <h1 class="text-lg lg:text-xl font-medium">Javascript Basic to advanced</h1>
+                        <p class="text-sm sm:text-base text-gray-500 mt-2">
                             Learn the real power of Modern JavaScript and you will become a real JavaScript programmer! 
                             we will embrace functional, object-oriented, and asynchronous programming
                         </p>
-                        <h4 class="text-blue-400 font-medium mt-4">Price : 20$
-                        </h4>
+                        <h4 class="text-blue-400 text-sm md:text-base font-medium mt-3 sm:mt-4">Price : 20$</h4>
                     </div>
                 </div>
 
@@ -295,11 +305,11 @@
                 <div class="flex flex-col sm:flex-row items-center justify-between border border-gray-200 rounded">
                     <img class="w-full sm:w-auto" src="./images/course/course-1.png" alt="course1_thumb">
                     <div class="ml-0 sm:ml-4 md:p-4 mt-4 sm:mt-0 p-4 sm:p-0">
-                        <h1 class="text-xl font-medium">Fundamental Of UI/UX Design</h1>
+                        <h1 class="text-lg lg:text-xl font-medium">Fundamental Of UI/UX Design</h1>
                         <p class="text-base text-gray-500 mt-2">
                             Launch a UX career with the research and design skills today's top companies require. Build a professional-grade portfolio.
                         </p>
-                        <h4 class="text-blue-400 font-medium mt-4">Price : 50$</h4>
+                        <h4 class="text-blue-400 text-sm md:text-base font-medium mt-3 sm:mt-4">Price : 50$</h4>
                     </div>
                 </div>
 
@@ -307,12 +317,12 @@
                 <div class="flex flex-col sm:flex-row items-center justify-between border border-gray-200 rounded">
                     <img class="w-full sm:w-auto" src="./images/course/course-3.png" alt="course1_thumb">
                     <div class="ml-0 sm:ml-4 md:p-4 mt-4 sm:mt-0 p-4 sm:p-0">
-                        <h1 class="text-xl font-medium">Fullstack Web Development</h1>
+                        <h1 class="text-lg lg:text-xl font-medium">Fullstack Web Development</h1>
                         <p class="text-base text-gray-500 mt-2">
                             Learn fullstack development with server-side support, for implementing a multi-platform solution.
                             In this Specialization cover front-end and backend technologies.
                         </p>
-                        <h4 class="text-blue-400 font-medium mt-4">Price : 30$</h4>
+                        <h4 class="text-blue-400 text-sm md:text-base font-medium mt-3 sm:mt-4">Price : 30$</h4>
                     </div>
                 </div>
 
@@ -321,11 +331,11 @@
                         justify-between border border-gray-200 rounded">
                     <img class="w-full sm:w-auto" src="./images/course/course-4.png" alt="course1_thumb">
                     <div class="ml-0 sm:m-4 md:p-4 mt-4 sm:mt-0 p-4 sm:p-0">
-                        <h1 class="text-xl font-medium">Digital Marketing</h1>
+                        <h1 class="text-lg lg:text-xl font-medium">Digital Marketing</h1>
                         <p class="text-base text-gray-500 mt-2">
                             In this course you will core principles of digital marketing  digital, the explosive growth of mobile and social media, 
                         </p>
-                        <h4 class="text-blue-400 font-medium mt-4">Price : 10$</h4>
+                        <h4 class="text-blue-400 text-sm md:text-base font-medium mt-3 sm:mt-4">Price : 10$</h4>
                     </div>
                 </div>
 
@@ -335,11 +345,11 @@
                     <img class="w-full sm:w-auto" src="./images/course/course-5.png" alt="course1_thumb">
                     <div class="ml-0 sm:ml-4 md:p-4 mt-4 sm:mt-0 p-4
                             sm:p-0">
-                        <h1 class="text-xl font-medium">Photography Basic Rules</h1>
+                        <h1 class="text-lg lg:text-xl font-medium">Photography Basic Rules</h1>
                         <p class="text-base text-gray-500 mt-2">
                             Learn fundamental principles in photography, from camera control to principles of composition and creativity. you’ll become professional
                         </p>
-                        <h4 class="text-blue-400 font-medium mt-4">Price : 15$</h4>
+                        <h4 class="text-blue-400 text-sm md:text-base font-medium mt-3 sm:mt-4">Price : 15$</h4>
                     </div>
                 </div>
 
@@ -347,12 +357,12 @@
                 <div class="flex flex-col sm:flex-row items-center justify-between border border-gray-200 rounded">
                     <img class="w-full sm:w-auto" src="./images/course/course-6.png" alt="course1_thumb">
                     <div class="ml-0 sm:ml-4 md:p-4 mt-4 sm:mt-0 p-4 sm:p-0">
-                        <h1 class="text-xl font-medium">Motion Graphics</h1>
+                        <h1 class="text-lg lg:text-xl font-medium">Motion Graphics</h1>
                         <p class="text-base text-gray-500 mt-2">
                             Learn to create letterforms filled with personality and bring them to life through playful animation
 
                         </p>
-                        <h4 class="text-blue-400 font-medium mt-4">Price : 25$</h4>
+                        <h4 class="text-blue-400 text-sm md:text-base font-medium mt-3 sm:mt-4">Price : 25$</h4>
                     </div>
                 </div>
 
@@ -391,7 +401,7 @@
                             we have helpful 1k+ customer ratings and reviews. 
                         </p>
 
-                        <div class="flex w-full flex-wrap mt-4 md:mt-8 gap-y-2 gap-x-4 md:gap-x-4 lg:gap-4 ">
+                        <div class="flex w-full flex-wrap mt-4 md:mt-8 gap-y-2 gap-x-6 md:gap-x-14 lg:gap-x-14 lg:gap-y-4 justify-between md:justify-start ">
                             <div class="">
                                 <h2 class="font-semibold text-xl lg:text-2xl text-gray-800">3.2K+</h2>
                                 <p class="text-gray-700">Online Course</p>
@@ -575,7 +585,7 @@
                 Some Students Feedback
             </h1>
             <p class="text-gray-500 mt-3 text-center text-sm md:text-base">
-                
+                our students are say something about us and learn how some of the world's best companies hire them.  
             </p>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-5 lg:gap-6 mt-4 md:mt-6 lg:mt-9 relative mx-0 md:mx-5">
@@ -591,7 +601,7 @@
 
                 <div class="rounded border border-gray-200 p-6">
                     <div class="flex justify-between">
-                        <img class="w-14" src="./images/comma.png" alt="comma">
+                        <img class="w-8 sm:w-10 md:-14" src="./images/comma.png" alt="comma">
                         <div>
                             <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
                             <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
@@ -615,7 +625,7 @@
                 </div>
                 <div class="rounded border border-gray-200 p-6">
                     <div class="flex justify-between">
-                        <img class="w-14" src="./images/comma.png" alt="comma">
+                        <img class="w-8 sm:w-10 md:-14" src="./images/comma.png" alt="comma">
                         <div>
                             <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
                             <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
@@ -742,14 +752,6 @@
                         </div>
                     </div>
                 </div>
-  
-              
-         
-            
-
-            
-            
-            
             </div>
 
         </section>
@@ -794,7 +796,7 @@
 
         <div class="container mx-auto">
             <div class="max-w-sm mx-auto">
-                <h1 class="text-white text-center text-2xl font-medium mb-4">E-Learning</h1>
+                <h1 class="text-white text-center text-3xl md:text-4xl  font-semibold mb-4">E-Learning</h1>
                 <p class="text-gray-100 text-center text-base my-3">
                     Office Mirpur-110, Capital of Dhaka 
                 </p>
@@ -805,15 +807,20 @@
                 </p>
                 <div class="flex mt-6 justify-center">
                     <a class="mr-2 group  group-hover:text-blue-500 bg-gray-800 w-8 h-8 rounded-full flex items-center justify-center" href="https://www.facebook.com/rasel.mahmud.dev">
-                        <i class="text-gray-50 group-hover:text-blue-500 fa-brands fa-facebook"></i></a>
+                        <i class="text-gray-50 group-hover:text-blue-500 fa-brands fa-facebook"></i>
+                    </a>
                     <a class="mx-2 group  group-hover:text-blue-500 bg-gray-800 w-8 h-8 rounded-full flex items-center justify-center" href="https://www.instagram.com/raselmraju">
-                        <i class="text-gray-50 group-hover:text-blue-500 fa-brands fa-instagram"></i></a>
+                        <i class="text-gray-50 group-hover:text-blue-500 fa-brands fa-instagram"></i>
+                    </a>
                     <a class="mx-2 group  group-hover:text-blue-500 bg-gray-800 w-8 h-8 rounded-full flex items-center justify-center" href="https://twitter.com/?lang=en">
-                        <i class="text-gray-50 group-hover:text-blue-500 fa-brands fa-twitter"></i></a>
+                        <i class="text-gray-50 group-hover:text-blue-500 fa-brands fa-twitter"></i>
+                    </a>
                     <a class="mx-2 group  group-hover:text-blue-500 bg-gray-800 w-8 h-8 rounded-full flex items-center justify-center" href="https://www.linkedin.com/in/rasel-mahmud-9869a2234">
-                        <i class="text-gray-50 group-hover:text-blue-500 fa-brands fa-linkedin"></i></a>
+                        <i class="text-gray-50 group-hover:text-blue-500 fa-brands fa-linkedin"></i>
+                    </a>
                     <a class="mx-2 group  group-hover:text-blue-500 bg-gray-800 w-8 h-8 rounded-full flex items-center justify-center" href="https://tiktok.com">
-                        <i class="text-gray-50 group-hover:text-blue-500 fa-brands fa-tiktok"></i></a>
+                        <i class="text-gray-50 group-hover:text-blue-500 fa-brands fa-tiktok"></i>
+                    </a>
                 </div>
             </div>
 
@@ -832,11 +839,13 @@
                 extend: {
                     height: {
                         '128': '45rem',
+                        '120': '42rem',
                     }
                 }
             }
         }
     </script>
+    
     <!-- flowbite js cdn link -->
     <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js "></script>
 </body>
